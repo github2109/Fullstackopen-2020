@@ -1,0 +1,12 @@
+note over browser:
+User input data and click submit button
+end note
+note over browser:
+Prevent the default handling of form submit, create new note, add new note to note
+array and load redraw note, send note to server
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+Add new note to database, send Json to browser
+end note
+server-->browser: HTML status 201
